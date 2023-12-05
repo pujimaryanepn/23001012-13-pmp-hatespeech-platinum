@@ -1,0 +1,17 @@
+tags:
+  - name: Sentiment (Text) Analysis using Neural Networks
+get:
+  description: Sentiment Classification of input Text
+parameters:
+  - name: text
+    in: formData
+    required: True
+    description: Text data to process
+    type: string
+responses:
+    '200':
+      description: Successful responses
+    '400':
+      description: Bad Request
+    '500':
+      description: Internal Server Error

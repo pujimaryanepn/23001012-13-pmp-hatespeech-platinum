@@ -1,0 +1,19 @@
+tags:
+  - name: Sentiment (File) Analysis using LSTM
+get:
+  description: Sentiment Classification of input File
+consume:
+  -mutlipart/form-data
+parameters:
+  - name: file
+    in: formData
+    description: File to upload
+    required: True
+    type: file
+responses:
+    '200':
+      description: Successful responses
+    '400':
+      description: Bad Request
+    '500':
+      description: Internal Server Error
